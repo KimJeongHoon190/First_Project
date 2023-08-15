@@ -12,15 +12,8 @@ gantt
     시연 PPT 준비 : after a3, 2d
 
     section 구현
-    네트워크     :a1,2023-08-17  , 1d
-    서버(도커) : after a1,  1d
-    서버(젠킨스) :after a1 , 1d
-    서버(쿠버네티스) : after a1
-
-    section Back-end
-    django 학습 및 적용 : a1,2020-10-14 , 10d
-    회원기능      :a2,after a1 , 10d
-    친구기능      :after a1  ,10d
-    결과 이미지저장,공유  : a3,after a2, 2d
-    스티커 기능  : a4,after a3, 2d
+    네트워크     : b1, 2023-08-17, 1d
+    서버(도커) : b2, 2023-08-21, 1d
+    서버(젠킨스) :after b2 , 1d
+    서버(쿠버네티스) : after b3, 1d
 ```
