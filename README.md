@@ -1,24 +1,21 @@
 # First_Project
-1차 프로젝트 
 
-
-
-## 📖 Gantt :fire:
 
 ```mermaid
 gantt
-    title A Gantt Diagram
+    title 프로젝트 일정표
     dateFormat  YYYY-MM-DD
-    section AI
-    AI 기술테스트  : a1, 2020-10-14, 10d
-    가상 얼굴 학습 및 환경세팅  : 2020-10-14, 10d
-    얼굴 인식 개선 및 적용 : after a1, 10d
-    가상 얼굴 이미지 생성 및 분류 : after a1, 4d
+    section 문서화
+    제안서 작성  : a1, 2023-08-15, 1d
+    구성도 작성  : after a1, 1d
+    설치 메뉴얼 : after a2, 12d
+    시연 PPT 준비 : after a3, 2d
 
-    section Front-end
-    와이어프레임     :a1,2020-10-14  , 10d
-    react 학습 및 적용 : after a1,  10d
-    사진 업로드 및 설정 기능 :after a1 , 10d
+    section 구현
+    네트워크     :a1,2023-08-17  , 1d
+    서버(도커) : after a1,  1d
+    서버(젠킨스) :after a1 , 1d
+    서버(쿠버네티스) : after a1
 
     section Back-end
     django 학습 및 적용 : a1,2020-10-14 , 10d
