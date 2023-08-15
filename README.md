@@ -8,8 +8,8 @@ gantt
     section 문서화
     제안서 작성  : a1, 2023-08-15, 1d
     구성도 작성  : after a1, 1d
-    설치 메뉴얼 : after a1, 12d
-    시연 PPT 준비 : after a1, 2d
+    설치 메뉴얼 : after a1, 9d
+    시연 PPT 준비 : after a2, 2d
 
     section 구현
     네트워크     : b1, 2023-08-17, 1d
