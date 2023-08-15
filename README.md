@@ -1,13 +1,13 @@
 # First_Project
 
 
-```mermaid
 <style>
     .mermaid {
         fill: blue;
     }
 </style>
 
+```mermaid
 gantt
     title 프로젝트 일정표
     dateFormat  YYYY-MM-DD
