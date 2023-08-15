@@ -2,6 +2,9 @@
 
 ```mermaid
 gantt
+
+    theme forest
+
     title 프로젝트 일정표
     dateFormat  YYYY-MM-DD
     section 문서화
