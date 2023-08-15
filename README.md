@@ -2,6 +2,12 @@
 
 
 ```mermaid
+<style>
+    .mermaid {
+        fill: blue;
+    }
+</style>
+
 gantt
     title 프로젝트 일정표
     dateFormat  YYYY-MM-DD
