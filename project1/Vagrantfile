@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
             vb.memory = 8192
         end
         ctrl.vm.network "private_network", ip: "192.168.10.11"
-        ctrl.vm.provision "shell", inline: <<-SCRIPT
+        ctrl.vm.provision "shell", inline: <<-SCRIPT       
             sudo apt update -y && sudo apt -y full-upgrade
             sudo apt install -y gnupg2 software-properties-common apt-transport-https ca-certificates
             curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -55,9 +55,9 @@ Vagrant.configure("2") do |config|
             sudo systemctl restart containerd
             sudo systemctl enable containerd
             sudo systemctl restart kubelet
-            sudo systemctl enable kubelet
+            sudo systemctl enable kubelet  
         SCRIPT
-    end
+    end     # 일단 Kubernetes 팀들은 컨트롤러 하나와 워커 노드 2개로 구성되어있다. 공통되는 작업 과정은 Vagrantfile로 자동 실행되게 했으니 나머지 설치 부분은 Installation_guide 폴더나 강사님이 주신 pdf 파일을 참고하자
 
     config.vm.define "wn1" do |wn1|
         wn1.vm.hostname = "kube-worker-node1"
