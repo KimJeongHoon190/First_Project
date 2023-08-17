@@ -1,0 +1,58 @@
+# combined.yaml
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfs-pv
+spec:
+  capacity:
+    storage: 5Gi
+  volumeMode: Filesystem  
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  mountOptions:
+    - nfsvers=4.1
+  nfs:
+    server: 192.168.10.16
+    path: "/nfs_kubernetes"
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs-pvc
+spec:
+  accessModes:
+    - ReadWriteMany
+  volumeMode: Filesystem
+  storageClassName: ""  
+  resources:
+    requests:
+      storage: 5Gi
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nfs-pod
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      resources:
+        requests:
+          memory: "256Mi"
+          cpu: "100m"  # 0.1 CPU
+        limits:
+          memory: "512Mi"
+          cpu: "200m"  # 0.2 CPU
+      volumeMounts:
+        - name: nfs-volume
+          mountPath: /mnt/nfs_kubernetes
+  volumes:
+    - name: nfs-volume
+      persistentVolumeClaim:
+        claimName: nfs-pvc
