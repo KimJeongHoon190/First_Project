@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
         - name: httpd-container
-          image: 192.168.10.14/httpd:latest
+          image: 192.168.10.14/hedgehoon/httpd:latest
           ports:
             - containerPort: 8082  # Use a different port number, e.g., 8082
         - name: nginx-container
-          image: 192.168.10.14/nginx:latest
+          image: 192.168.10.14/hedgehoon/nginx:latest
           ports:
             - containerPort: 8083  # Use a different port number, e.g., 8083
 ---
