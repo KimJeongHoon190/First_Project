@@ -1,4 +1,4 @@
-<mxfile modified="2023-08-18T00:12:32.249Z" host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="9JF7FxL63TO4SkMEtKaj" version="21.6.8" type="device">
+<mxfile modified="2023-08-18T01:07:08.655Z" host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="8N5H-XPseNtCeTPo0t6r" version="21.6.8" type="device">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Page-1">
     <mxGraphModel dx="1434" dy="2490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="1">
       <root>
@@ -76,12 +76,6 @@
         </mxCell>
         <mxCell id="P6JIc_EarEWsi1g6U78m-2" value="&lt;font color=&quot;#cc1d28&quot;&gt;&lt;span style=&quot;font-size: 28px;&quot;&gt;&lt;b&gt;email&amp;nbsp;&lt;br&gt;notification&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=#095C86;" vertex="1" parent="1">
           <mxGeometry x="840" y="-1150" width="150" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="P6JIc_EarEWsi1g6U78m-4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#fb550e;strokeWidth=7;" vertex="1" parent="1">
-          <mxGeometry x="1090.12" y="-972.5" width="230" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="P6JIc_EarEWsi1g6U78m-8" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Kubernetes.svg;" vertex="1" parent="1">
-          <mxGeometry x="1280" y="-1010" width="78.65" height="75.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
