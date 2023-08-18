@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-master
+  namespace: jenkins
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jenkins-master
+  template:
+    metadata:
+      labels:
+        app: jenkins-master
+    spec:
+      containers:
+        - name: jenkins-master
+          image: jenkins/jenkins:lts
+          ports:
+            - containerPort: 8080
+            - containerPort: 50000
+          volumeMounts:
+            - name: jenkins-home
+              mountPath: /var/jenkins_home
+          resources:  # 리소스 제한 추가
+            requests:
+              cpu: "200m"  # 최소 CPU 요구량 (0.2 Core)
+              memory: "512Mi"  # 최소 메모리 요구량 (512 MB)
+            limits:
+              cpu: "1"  # 최대 CPU 제한 (1 Core)
+              memory: "2Gi"  # 최대 메모리 제한 (2 GB)
+      volumes:
+        - name: jenkins-home
+          persistentVolumeClaim:
+            claimName: jenkins-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins-service
+  namespace: jenkins # 네임스페이스가 생성되었다면 해당 네임스페이스로 변경
+spec:
+  selector:
+    app: jenkins-master
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
