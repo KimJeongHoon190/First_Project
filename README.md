@@ -8,7 +8,7 @@ gantt
     제안서 작성  : a1, 2023-08-15, 1d
     구성도 작성  : after a1, 1d
     설치 메뉴얼 작성 : after a1, 2023-08-17, 9d
-    시연 PPT 준비 : after a1, 2023-08-21, 2d
+    시연 PPT 준비 : after a1, 2023-08-20, 3d
    
 
     section 구현
