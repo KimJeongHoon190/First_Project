@@ -169,7 +169,7 @@ Vagrant.configure("2") do |config|
         jenk.vm.provider "virtualbox" do |vb|
             vb.name = "Jenkins"
             vb.cpus = 4
-            vb.memory = 4096
+            vb.memory = 6144
         end
         jenk.vm.network "private_network", ip: "192.168.10.15"
         jenk.vm.provision "shell", inline: <<-SCRIPT
