@@ -13,8 +13,8 @@ gantt
 
     section 구현
     서버(NFS) 구축 : b1, 2023-08-17, 1d
-    서버(Docker-registry) 구축 : after b1, 1d
-    서버(Jenkins) + 서버(Ngrok) 구축 : after b1, 2d
+    서버(Docker-registry) 구축 : b2, 2023-08-18, 1d
+    서버(Jenkins) + 서버(Ngrok) 구축 : after b2, 2d
     서버(SonarQube) 구축 : b3, 2023-08-20, 3d
     프로젝트 보완 : after b3, 1d
 ```
